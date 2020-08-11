@@ -14,6 +14,21 @@ public class ArrayTest3 {
         }
         avg = sum/h.length;
         System.out.printf("平均: %.2f\n", avg);
+        //取最大
+        double max=Integer.MIN_VALUE;
+        for(int i=0;i<5;i++){
+            if(h[i]>max){
+                max = h[i];
+            }
+        }
+        System.out.println("最大值:"+max);
+        double min=Integer.MAX_VALUE;
+        for(int i=0;i<5;i++){
+            if(h[i]<min){
+                min = h[i];
+            }
+        }
+        System.out.println("最小值:"+min);
         
         //java 8
         //列出所有h
@@ -22,6 +37,10 @@ public class ArrayTest3 {
         sum= Arrays.stream(h).sum();
         avg= Arrays.stream(h).average().getAsDouble();
         System.out.printf("總和:%.2f \n平均:%.2f\n",sum,avg);
+        max = Arrays.stream(h).max().getAsDouble();
+        System.out.printf("最大:%.2f\n",max);
+        min = Arrays.stream(h).min().getAsDouble();
+        System.out.printf("最小:%.2f\n",min);
     }
  
 }
