@@ -5,10 +5,13 @@ public class BMI {
     public String name;
     public double h;
     public double w;
-    public double bmi;
-    
-    public double calcBMI(){
-        bmi = w / Math.pow(h/100, 2);
+    private double bmi;//私有物件變數
+    //取得BMI值
+    public double getBMI(){
         return bmi;
+    }
+    //設定BMI值
+    public void setBMI(){
+        bmi = w / Math.pow(h/100, 2);
     }
 }

@@ -1,5 +1,5 @@
 
-package com.pcschool.java0811.ocg;
+package com.pcschool.java0811.ocp.test;
 
 import java.util.Scanner;
 

@@ -25,3 +25,4 @@ public class PetStore2 {
         System.out.printf("總資產:%,d", c1.amount*c1.price + c2.amount*c2.price );
     }
 }
+
