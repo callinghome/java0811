@@ -2,6 +2,7 @@
 package com.pcschool.java0811.ocp.d01;
 
 import java.util.Arrays;
+import java.util.DoubleSummaryStatistics;
 
 public class ArrayTest3 {
     public static void main(String[] args) {
@@ -41,6 +42,10 @@ public class ArrayTest3 {
         System.out.printf("最大:%.2f\n",max);
         min = Arrays.stream(h).min().getAsDouble();
         System.out.printf("最小:%.2f\n",min);
+        DoubleSummaryStatistics stat =Arrays.stream(h).summaryStatistics();
+        System.out.println(stat);
+        System.out.printf("最大值:%.2f\n",stat.getMax());
+        System.out.printf("最小值:%.2f\n",stat.getMin());
     }
  
 }
